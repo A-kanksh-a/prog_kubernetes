@@ -1,0 +1,7 @@
+domain: programming-kubernetes-info
+repo: k8s.io/cnat-kubebuilder
+resources:
+- group: webapp
+  kind: Guestbook
+  version: v1
+version: "2"

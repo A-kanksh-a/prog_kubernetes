@@ -18,3 +18,21 @@ kubectl create -f cnat-client-go/cnat-crd.yaml
 
 kubectl create -f cnat-client-go/cnat-example.yaml
 
+
+## FOR cnat-kubebuilder
+
+kubebuilder init --domain programming-kubernetes-info
+
+kubebuilder create api --group webapp --version v1 --kind Guestbook
+
+# install the CRD into cluster
+
+make install
+
+# run controller
+
+make run
+
+# install instances of custom resources
+
+kubectl apply -f config/samples/
