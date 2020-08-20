@@ -15,5 +15,6 @@ go build -o cnat-controller .
 # create CRD and register and then create CR in a seperate terminal
 
 kubectl create -f cnat-client-go/cnat-crd.yaml
+
 kubectl create -f cnat-client-go/cnat-example.yaml
 
